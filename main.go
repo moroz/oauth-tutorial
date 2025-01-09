@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 
+	_ "github.com/mattn/go-sqlite3"
 	"github.com/moroz/oauth-tutorial/handlers"
 )
 

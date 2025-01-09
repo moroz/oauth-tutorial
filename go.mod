@@ -2,7 +2,10 @@ module github.com/moroz/oauth-tutorial
 
 go 1.23.4
 
-require github.com/cortesi/modd v0.8.1
+require (
+	github.com/cortesi/modd v0.8.1
+	github.com/mattn/go-sqlite3 v1.14.24
+)
 
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
