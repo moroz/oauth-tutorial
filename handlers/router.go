@@ -8,5 +8,8 @@ func Router() http.Handler {
 	pages := PageController()
 	r.HandleFunc("GET /", pages.Index)
 
+	oauth := OAuthController()
+	r.HandleFunc("GET /oauth/github/start", oauth.Start)
+
 	return r
 }
