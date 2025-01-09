@@ -24,7 +24,7 @@ func TestEncryptDecrypt(t *testing.T) {
 		t.Errorf("Expected no error, got: %s", err)
 	}
 
-	actual, err := storage.Decrypt(nonce, ciphertext)
+	actual, err := storage.Decrypt(nonce, ciphertext, 3600)
 	if string(actual) != original {
 		t.Errorf("Expected decrypted value to equal original text %q, got: %q", original, actual)
 	}
